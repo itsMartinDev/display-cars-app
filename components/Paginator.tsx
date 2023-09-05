@@ -7,8 +7,8 @@ const Paginator = () => {
     <div>
       <Image src='/app/silver-horizontal-line.jpg' width={1930} height={8} className='object-fill w-full' alt=''></Image>
       <div className='bg__navbar' >
-         <div className='container'>
-            asdsa
+         <div className='container h-8'>
+            
          </div>
       </div>
 

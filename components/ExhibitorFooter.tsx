@@ -1,31 +1,54 @@
 import Image from 'next/image'
 import React from 'react'
+import { models } from '@/constants/constants'
 
 const ExhibitorFooter = () => {
-  return (
-    <div className='bg-black text-white'>
+   return (
 
-      <div className='container flex justify-around py-4'>
-         
-         <div className='flex items-center justify-center w-1/2' >
+      <div className=' text-white  mt-[-80px] z-50 relative'>
 
-            <Image src={'/app/speedmeter.png'} width={40} height={40} alt='speedmeter' className='mr-4'></Image>
-            <div className='text-3xl'>
-               300 km/hr
+         <div className='container flex justify-around py-4 '>
+
+            <div className='flex items-center justify-center w-1/3 ' >
+
+               <div className='flex items-center'>
+
+
+                  <span className='italic'>
+                     <span className='font-bold'>Max Speed</span>
+                     <div>
+                        {models[0].topSpeed + ' ' + models[0].topSpeedUnit}
+                     </div>
+                  </span>
+               </div>
+
             </div>
+
+            <div className='flex items-center justify-center w-1/3' >
+               {/* <Image src={'/app/logos/lamborghini.png'} width={35} height={35} alt='logo' className='mr-8'></Image> */}
+               <span className='italic'>
+                  <span className='font-bold'>{models[0].accelerationRange}</span>
+                  <div>
+                     {models[0].acceletarionTime}
+                  </div>
+               </span>
+            </div>
+
+            <div className='flex items-center justify-center w-1/3' >
+               {/* <span className='italic'>Assembly</span>
+               <Image src={'/models/flags/it.png'} width={30} height={30} alt='logo' className='ml-8'></Image> */}
+               <span className='italic'>
+                  <span className='font-bold'>{models[0].powerLegend}</span>
+                  <div>
+                     {models[0].powerValue}
+                  </div>
+               </span>
+            </div>
+
+
          </div>
-
-         <div className='bg-white h-[60px] w-1'></div>
-
-         <div className='flex items-center justify-center w-1/2' >
-            <Image src={'/app/logos/lamborghini.png'} width={60} height={60} alt='logo' className='mr-8'></Image>
-            <div className='text-3xl'>2018</div>
-         </div>
-
-
       </div>
-    </div>
-  )
+   )
 }
 
 export default ExhibitorFooter

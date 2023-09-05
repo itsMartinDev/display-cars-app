@@ -25,26 +25,17 @@ const Exhibitor = () => {
          {/* red, green, blue */}
 
          <Canvas shadows camera={{ position: [-5, 3, 10], fov: 30 }}>
-
-            <CameraRig />
             <color attach="background" args={['#171717']} />
 
-
-
             <Vehicule ></Vehicule>
+            
             <ContactShadows opacity={.5} scale={10} blur={1} far={10} resolution={256} color="#000000" />
 
-            <Environment frames={Infinity} resolution={256} blur={2}>
-
+            <Environment frames={Infinity} resolution={256} blur={.5} files="/models/bg/dark-background.hdr" background  >
                <Lightformers />
-
-
             </Environment>
 
-
-
-
-
+            <CameraRig />
 
             {/* <axesHelper args={[500]} /> */}
 
@@ -71,47 +62,11 @@ function CameraRig({ v = new THREE.Vector3() }) {
    })
 }
 
-
-const lights = [0, 1, 2, 3]
-
-function Wrappers() {
-   const m1: any = useRef();
-   const [t, setT] = useState(0)
-
-   useFrame((state, delta) => {
-
-      setT(t + 0.01)
-
-      m1.current!.position!.z = 20 * Math.sin(t) + 0;
-      m1.current!.position!.x = 20 * Math.cos(t) + 0;
-
-   })
-
-
-   return (
-
-      <group rotation={[0, 0, 0]}>
-         <mesh ref={m1} position={[0, 5, 0]}  >
-            <boxGeometry args={[10, .1, 10]} ></boxGeometry>
-         </mesh>
-
-
-         <mesh position={[-10, 1, 0]} rotation={[0, 0, 0]} >
-            <boxGeometry args={[1, 1, 1]} ></boxGeometry>
-         </mesh>
-
-      </group>
-
-   )
-}
-
+// Illumination
 function Lightformers() {
 
    const lamp1: any = useRef()
    const lamp2: any = useRef()
-
-   const lamp3: any = useRef()
-
 
 
    const [t, setT] = useState(0)
@@ -144,33 +99,34 @@ function Lightformers() {
             />
          </Float>
 
-
+         {/* Spining lights */}
          <Lightformer ref={lamp1}
-            form="circle" 
+            form="circle"
             intensity={2}
             color="white"
             target={[0, 0, 0]}
             position={[-10, 6, 0]}
-            scale={[1, 1, 1]} 
+            scale={[1, 1, 1]}
          />
 
 
          <Lightformer ref={lamp2}
-            form="circle" 
-            intensity={2} 
-            color="white" 
-            target={[0, 0, 0]} 
+            form="circle"
+            intensity={2}
+            color="white"
+            target={[0, 0, 0]}
             position={[-10, 3, 0]}
-            scale={[1, 1, 1]} 
+            scale={[1, 1, 1]}
          />
 
-         <Lightformer ref={lamp3}
-            form="circle" 
-            intensity={40} 
-            color="white" 
-            target={[0, 0, 0]} 
+         {/* Side light */}
+         <Lightformer 
+            form="circle"
+            intensity={40}
+            color="white"
+            target={[0, 0, 0]}
             position={[-10, 5, 0]}
-            scale={[1, 1, 1]} 
+            scale={[1, 1, 1]}
          />
 
       </group>

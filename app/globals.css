@@ -17,3 +17,7 @@
 .text__logo {
   font-family: 'Permanent Marker';
 }
+
+.title {
+  @apply text-2xl font-bold italic
+}
