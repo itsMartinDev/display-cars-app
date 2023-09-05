@@ -10,7 +10,8 @@ export default function Home() {
       
       <Navbar></Navbar>
 
-      {/* <Exhibitor></Exhibitor> */}
+      <Exhibitor></Exhibitor>
+      
       <div className='bg-gray-400 h-8'> 
 
       </div>

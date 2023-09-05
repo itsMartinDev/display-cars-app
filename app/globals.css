@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 .bg__navbar {
   background-image: url("/app/bg-navbar.jpg");
@@ -12,4 +12,8 @@
 
 .container {
   @apply  max-w-7xl mx-auto;
+}
+
+.text__logo {
+  font-family: 'Permanent Marker';
 }

@@ -1,16 +1,22 @@
 'use client'
 import React from 'react'
-import { useLayoutEffect, useRef, useState } from 'react'
-import { useLoader } from '@react-three/fiber'
-import { useGLTF, Clone  } from '@react-three/drei'
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import {  Clone } from '@react-three/drei'
+import * as THREE from 'three'
+
+import { PerformanceMonitor, AccumulativeShadows, RandomizedLight, Environment, Lightformer, Float, useGLTF } from '@react-three/drei'
+
 
 const Vehicule = () => {
 
-   const { scene } = useGLTF('/models/lamborghini-urus-2018/scene.gltf')
-   
+  const { scene } = useGLTF('/models/binary/lamborghini_countach_lpi_800-4.glb');
+
   return (
-    <Clone  object={scene} />
+    <group castShadow>
+
+      <Clone object={scene} rotation={new THREE.Euler( 0, Math.PI , 0 ) } />
+
+      
+    </group>
   )
 }
 

@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
+import { norican } from '@/app/fonts'
+
+
 
 const Navbar = () => {
   return (
@@ -7,8 +10,8 @@ const Navbar = () => {
       <div className='bg__navbar' >
 
         <div className='h-12 text-white container bg-ray-500 flex items-center p-4'>
-          <Image src='/logo.png' alt='logo' width={35} height={35} className='mr-4'></Image>
-          <span className='font-bold'>Luxury Cars</span>
+          <Image src='/app/garage-icon.png' alt='logo' width={22} height={22} className='mr-4'></Image>
+          <span className={norican.className + ' text-xl'} >Garage</span>
         </div>
       </div>
 
