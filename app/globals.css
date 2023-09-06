@@ -4,14 +4,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+:root {
+  --bg-custom-gray: #202023;
+  --opacity-value : 0
+}
+
+
+
+body {
+  min-width: 375px;
+}
+
 .bg__navbar {
   background-image: url("/app/bg-navbar.jpg");
   background-position: center;
+
 }
 
 
 .container {
-  @apply  max-w-7xl mx-auto;
+  @apply  max-w-7xl mx-auto ;
+
 }
 
 .text__logo {
@@ -20,4 +33,80 @@
 
 .title {
   @apply text-2xl font-bold italic
+}
+
+.bg-custom-gray {
+  background-color: var(--bg-custom-gray);
+}
+
+
+
+
+
+
+.panel {
+  @apply flex flex-col  justify-center items-center;
+}
+
+
+.panel-01 {
+
+  background-image: url( '/svg/panel-01.svg' );
+  background-position: center;
+  background-repeat:  no-repeat; 
+  background-color: rgba(119, 119, 119, var(--opacity-value));
+}
+
+
+.panel-02 {
+
+  background-image: url( '/svg/panel-02.svg' );
+  background-position: center;
+  background-repeat:  no-repeat; 
+  background-color: rgba(255, 220, 220, var(--opacity-value));
+}
+
+
+
+.panel-03 {
+  background-image: url( '/svg/panel-03.svg' );
+  background-position: center;
+  background-repeat:  no-repeat; 
+  background-color: rgba(255, 220, 220, var(--opacity-value));
+}
+
+
+
+.panel-04 {
+  background-image: url( '/svg/panel-04.svg' );
+  background-position: center;
+  background-repeat:  no-repeat; 
+  background-color: rgba(255, 220, 220, var(--opacity-value));
+}
+
+
+
+
+.panel-05 {
+  background-image: url( '/svg/panel-05.svg' );
+  background-position: center;
+  background-repeat:  no-repeat; 
+  background-color: rgba(255, 220, 220, var(--opacity-value));
+}
+
+
+.panel-06 {
+  background-image: url( '/svg/panel-06.svg' );
+  background-position: center;
+  background-repeat:  no-repeat; 
+  background-color: rgba(255, 220, 220, var(--opacity-value));
+}
+
+
+
+.panel-07 {
+  background-image: url( '/svg/panel-07.svg' );
+  background-position: center;
+  background-repeat:  no-repeat; 
+  background-color: rgba(255, 220, 220, var(--opacity-value));
 }

@@ -9,32 +9,32 @@ import Characteristics from '@/components/Characteristics'
 export default function Home() {
   return (
     <main>
-      
+
       <Navbar></Navbar>
-      
+
       <div className='text-white z-10 absolute  text-3xl italic font-bold w-full'>
         <div className='container p-4'>
           <div>
-            <Image src={'/models/logos/lamborghini-text.png'} width={200} height={110} alt={ models[0].manufacturer }  ></Image>
+            <Image src={'/models/logos/lamborghini-text.png'} width={200} height={48} alt={ models[0].manufacturer }  ></Image>
           </div>
           <div className='ml-12 mt-3 text-2xl font-normal'>
-            <Image src={'/models/logos/countach.png'} height={86} width={150} alt={ models[0].model }></Image>
+            <Image src={'/models/logos/countach.png'} height={22} width={150} alt={ models[0].model }></Image>
           </div>
         </div>
-        
+
 
       </div>
 
-      <Exhibitor></Exhibitor>
-      
-      {/* <div className='bg-gray-400 h-8'> </div> */}
+      {/* <Exhibitor></Exhibitor> */}
+
+      <div className='bg-gray-400 h-8'> </div>
 
       <ExhibitorFooter></ExhibitorFooter>
       <Paginator></Paginator>
       <Characteristics></Characteristics>
 
 
-      
+
     </main>
   )
 }

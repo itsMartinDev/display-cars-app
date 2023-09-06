@@ -7,9 +7,9 @@ const ExhibitorFooter = () => {
 
       <div className=' text-white  mt-[-80px] z-50 relative'>
 
-         <div className='container flex justify-around py-4 '>
+         <div className='container flex sm:justify-around py-4 '>
 
-            <div className='flex items-center justify-center w-1/3 ' >
+            <div className='flex items-center justify-center px-3  ' >
 
                <div className='flex items-center'>
 
@@ -24,7 +24,7 @@ const ExhibitorFooter = () => {
 
             </div>
 
-            <div className='flex items-center justify-center w-1/3' >
+            <div className='flex items-center justify-center px-3 ' >
                {/* <Image src={'/app/logos/lamborghini.png'} width={35} height={35} alt='logo' className='mr-8'></Image> */}
                <span className='italic'>
                   <span className='font-bold'>{models[0].accelerationRange}</span>
@@ -34,7 +34,7 @@ const ExhibitorFooter = () => {
                </span>
             </div>
 
-            <div className='flex items-center justify-center w-1/3' >
+            <div className='flex items-center justify-center px-3 ' >
                {/* <span className='italic'>Assembly</span>
                <Image src={'/models/flags/it.png'} width={30} height={30} alt='logo' className='ml-8'></Image> */}
                <span className='italic'>

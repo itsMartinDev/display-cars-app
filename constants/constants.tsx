@@ -11,18 +11,24 @@ export const models  = [
       accelerationRange : '0-100 km/h',
       acceletarionTime : '2.8 s',
 
-      powerLegend : 'Power (CV) / Power (KW)',
+      powerLegend : 'Power / Power (KW)',
       powerValue: '814 CV / 599 kW',
 
+      length : '191.7 in',
+      width: '82.6 in',
+      height : '44.8 in',
+
+      weight : '	1595 kg',
 
       retailsPrice : 225500,
       fabricationYear : 2022,
       manufacturerLogo : '',
+      
+      
       engine : {
-         type : 'Twin Turbo Premium Unleaded V-8',
-         mpg : '12 City / 17 Hwy',
-         horsepower : '641 hp',
-         transmition : '8-Speed A/T',
+         type : '6.5 V12 (819 Hp) MHEV 4WD ISR',
+         power : '785 Hp @ 8500 rpm'
+         
       },
       seats : 4,
       fuelTankCapacity : 23,

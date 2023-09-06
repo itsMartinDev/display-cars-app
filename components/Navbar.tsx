@@ -11,7 +11,7 @@ const Navbar = () => {
 
         <div className='h-12 text-white container bg-ray-500 flex items-center p-4'>
           <Image src='/app/garage-icon.png' alt='logo' width={22} height={22} className='mr-4'></Image>
-          <span className={norican.className + ' text-xl'} >Garage</span>
+          <span className={norican.className + ' text-xl'} >Virtual Garage</span>
         </div>
       </div>
 
