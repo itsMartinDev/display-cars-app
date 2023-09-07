@@ -15,124 +15,90 @@ const Characteristics = () => {
             </div>
 
 
-            <div className='md:flex md:justify-center'>
+            <div className='px-4'>
+
+               {/* PANEL ENGINE */}
+               <div className='panel panel-col panel-01 h-24 pt-2 sm:h-[128px]'>
+                  <Image src={'/svg/engine-icon.svg'} width={25} height={25} alt='Engine'></Image>
+                  <div className='font-bold italic my-1 pt-2'>
+                     { models[0].engine.type }
+                  </div>
+                  <div>
+                     { models[0].engine.power }
+                  </div>
+               </div>
+
+               {/* PANEL GAS AND ENSAMBLE */}
+               <div className='flex justify-center bg- gray-100  h-16 sm:h-24'>
 
 
-
-               <div className='md:mr-[-60px]'>
-
-                  {/* PANEL  \ | / */}
-                  <div className='flex justify-center w-full bg- blue-100 px-2'>
-
-
-                     <div className='panel panel-col panel-01 min-w-[115px] mr-[-20px]  h-24'>
-
-                        <div className='pr-4'>
-                           <Image src={'/app/width.png'}  width={40} height={20} alt='width'></Image>
-                        </div>
-                        <div className='font-bold italic  py-1'>
-                           Width
-                        </div>
-                        <div className='pl-9'> {models[0].width}</div>
-
-                     </div>
-
-
-                     <div className='panel panel-col panel-02  min-w-[168px]'>
-                        
-                        <div>
-                           <Image src={'/app/length.png'}  width={40} height={20} alt='length'></Image>
-                        </div>
-                        <div className='font-bold italic  py-1'>
-                           Length
-                        </div>
-                        <div>{models[0].length}</div>
-
-                     </div>
-
-
-                     <div className='panel panel-col panel-03 min-w-[115px] ml-[-20px]'>
-
-                        <div className='pl-4'>
-                           <Image src={'/app/height.png'}  width={40} height={20} alt='height'></Image>
-                        </div>
-                        <div className='font-bold italic  py-1'>
-                           Height
-                        </div>
-                        <div className='pr-7'> {models[0].height}</div>
-
-                     </div>
-
-
+                  <div className='panel panel-row panel-02 w-48 sm:w-64 mr-[-5px] sm:mr-[-3px] my-2'>
+                     <Image src={'/svg/gas-icon.svg'} width={20} height={20} alt='Gas'></Image>
+                     <div className='ml-4'> { models[0].fuelTankCapacity}</div>
                   </div>
 
 
-                  {/* PANEL --Weight-- */}
-                  <div className='flex justify-center w-full bg- blue-200 px-2 mt-[1px]  h-12'>
-                     <div className='panel panel-04 panel-row w-full max-w-[290px]'>
-                        <div className='pr-3'>
-                           <Image src={'/app/weight.png'} width={15} height={15} alt='Weight'></Image>
-                        </div>
-                        <div>
-                           <span className='font-bold italic pr-2'>Weight </span>
-                           { models[0].weight }
-                        </div>
-                     </div>
+                  <div className='panel panel-row panel-03 w-48 sm:w-64 ml-[-5px] sm:ml-[-3px] my-2  '>
+                     <div className='italic mr-4'>Assembly</div>
+                     <Image src={'/flags/' + models[0].assemblyFlag } width={25} height={20} alt='Flag'></Image>
+
                   </div>
 
                </div>
 
 
+               {/* PANEL \ | / */}
+               <div className='flex justify-center bg-gr ay-300'>
 
-               <div>
-
-                  {/* PANEL 0C */}
-                  <div className='flex justify-center w-full bg- blue-300 px-2   h-24'>
-                     <div className='panel panel-col panel-05  w-full max-w-[320px]'>
-                        <Image src={'/app/engine.png'} width={20} height={20} alt='Engine'></Image>
-                        <div className='font-bold italic my-1'>
-                           { models[0].engine.type }
-                        </div>
-                        <div>
-                           { models[0].engine.power }
-                        </div>
-                     </div>
-                  </div>
-
-
-                  {/* PANEL 0D */}
-                  <div className='px-2 pt-1 flex justify-center  w-full h-12 ml-[-5px] min-w-[375px]'>
+                  <div className='panel panel-col panel-04 w-36 sm:w-[200px]'>
                      
-                     <div className='panel  panel-06 w-[184px] mr-[-24px] panel-row ' >
-                        <Image src={'/app/fuel.png'} width={15} height={15} alt='Fuel'></Image>
-                        <div className='ml-4'>70 L</div>
+                     <Image src={'/svg/width.svg'}  width={40} height={20} alt='width' className='mr-6'></Image>
+                     <div className='font-bold italic py-1'>
+                        Width
                      </div>
+                     <div className='ml-6'> {models[0].width}</div>
 
-                     <div className='panel panel-07 w-[258px] ml-[-36px] panel-row '>
-                        <div className='italic mr-4'>Assembly</div>
-                        <Image src={'/flags/it.png'} width={25} height={20} alt='Fuel'></Image>
+                  </div>
 
+                  <div className='panel panel-col panel-05 w-44 h-24 mx-[-10px]    sm:w-64 sm:h-32 sm:mx-[-52px] '>
+                     <Image src={'/svg/length.svg'}  width={40} height={20} alt='length'></Image>
+                     <div className='font-bold italic py-1'>
+                     Length
                      </div>
+                     <div className=''> {models[0].length}</div>
+                  </div>
+
+                  <div className='panel  panel-col panel-06 w-36 sm:w-[200px] '>
+                     <Image src={'/svg/height.svg'}  width={40} height={20} alt='height' className='ml-6'></Image>
+                     <div className='font-bold italic py-1'>
+                     Height
+                     </div>
+                     <div className='mr-6'> {models[0].height}</div>
                   </div>
 
                </div>
+
+
+
+               {/* PANEL WEIGHT */}
+               <div className='flex justify-center bg-gr ay-500 pt-2'>
+                  <div className='panel panel-row panel-07 w-full h-14 sm:h-[70px]'>
+                     <Image src={'/svg/weight-icon.svg'} width={15} height={15} alt='Weight'></Image>
+                     <div className='mx-4'>{ models[0].weight }</div>
+                  </div>
+               </div>
+
+
 
 
             </div>
+
 
 
          </div>
 
 
 
-      
-{/* 
-         <div className='relative text-white flex justify-center items-center'>
-            <Image className='absolute z-10 h-22 w-32 object-cover' src={'/svg/panel-02.svg'} width={100} height={100} alt='xd'></Image>
-            <div className='z-50 text-white'>
-               abc
-            </div>
-         </div> */}
       </div>
    )
 }

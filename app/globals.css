@@ -20,10 +20,6 @@ body {
   background-position: center;
 }
 
-.bg {
-  background-image: url("/app/bg-hex-2.jpg");
-  background-size: cover;
-}
 
 
 .container {
@@ -94,18 +90,4 @@ body {
   mask: url('/svg/image-mask.svg');
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
-}
-
-.top-about-clip {
-  mask: url('/svg/top-about.svg');
-  mask-repeat: no-repeat;
-  mask-size: cover;
-}
-
-
-.bottom-about-clip {
-  mask: url('/svg/bottom-about.svg');
-  mask-repeat: no-repeat;
-  mask-size: cover;
-  mask-position: bottom;
 }

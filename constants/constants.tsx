@@ -24,7 +24,8 @@ export const models  = [
          power : '785 Hp @ 8500 rpm'
          
       },
-
+      fuelTankCapacity : '70 L',
+      assemblyFlag : 'it.png',
 
       about : 'Fifty years since its unveiling at the Geneva Motor Show, the legendary Lamborghini Countach is making headlines again with a limited-series hybrid supercar celebrating the visionary design that revolutionized modern sports cars forever and laid the foundations of the Lamborghini legacy. This is the new Countach LPI 800-4. Inspired by the past, made for the future.',
 
@@ -40,7 +41,6 @@ export const models  = [
       manufacturerLogo : '',
       
       seats : 4,
-      fuelTankCapacity : 23,
       model3d : ''
    }
 ]

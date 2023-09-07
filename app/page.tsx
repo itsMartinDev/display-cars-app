@@ -8,6 +8,9 @@ import Characteristics from '@/components/Characteristics'
 import About from '@/components/About'
 
 export default function Home() {
+
+  const showVehicle = false;
+
   return (
     <main>
 
@@ -26,9 +29,16 @@ export default function Home() {
 
       </div>
 
-      <Exhibitor></Exhibitor>
+      {
+        showVehicle &&
+        <Exhibitor></Exhibitor>
+      }
 
-      {/* <div className='bg-gray-400 h-32'> </div> */}
+      {
+        ! showVehicle &&
+        <div className='bg-custom-gray h-64'> </div>
+      }
+      {/*  */}
 
       <ExhibitorFooter></ExhibitorFooter>
       <Paginator></Paginator>
