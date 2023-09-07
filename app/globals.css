@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root {
-  --bg-custom-gray: #232323;
-  --opacity-value : 0
+  --bg-custom-gray: #1b1b1b;
+  --opacity-value : 0;
 }
 
 
@@ -51,7 +51,7 @@ body {
 
 
 .panel {
-  background-position: center;
+  background-position:  center;
   background-repeat:  no-repeat; 
   background-color: rgba(119, 119, 119, var(--opacity-value));
 }

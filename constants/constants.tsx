@@ -4,6 +4,18 @@
 export const models  = [
    { 
       id: '0',
+      
+      
+      
+      files : {
+
+         binaryFile : 'lamborghini_countach_lpi_800-4.glb',
+         manufacturerLogo : 'lamborghini-text.png',
+         modelLogo : 'countach.png'
+      },
+
+      
+
       manufacturer : 'Lamborghini',
       model : 'Countach LPI 800-4',
       topSpeed : 355,
@@ -22,7 +34,6 @@ export const models  = [
       engine : {
          type : '6.5 V12 (819 Hp) MHEV 4WD ISR',
          power : '785 Hp @ 8500 rpm'
-         
       },
       fuelTankCapacity : '70 L',
       assemblyFlag : 'it.png',
@@ -36,11 +47,5 @@ export const models  = [
          'lambo_03.jpg'
       ],
 
-      retailsPrice : 225500,
-      fabricationYear : 2022,
-      manufacturerLogo : '',
-      
-      seats : 4,
-      model3d : ''
    }
 ]

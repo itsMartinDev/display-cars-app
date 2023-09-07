@@ -6,28 +6,19 @@ import Image from 'next/image'
 import { models } from '@/constants/constants'
 import Characteristics from '@/components/Characteristics'
 import About from '@/components/About'
+import ExhibitorHeader from '@/components/ExhibitorHeader'
 
 export default function Home() {
 
-  const showVehicle = false;
+  const showVehicle = true;
 
   return (
     <main>
 
       <Navbar></Navbar>
 
-      <div className='text-white z-10 absolute  text-3xl italic font-bold w-full'>
-        <div className='container p-4'>
-          <div>
-            <Image src={'/models/logos/lamborghini-text.png'} width={200} height={48} alt={ models[0].manufacturer }  ></Image>
-          </div>
-          <div className='ml-12 mt-3 text-2xl font-normal'>
-            <Image src={'/models/logos/countach.png'} height={22} width={150} alt={ models[0].model }></Image>
-          </div>
-        </div>
 
-
-      </div>
+      <ExhibitorHeader></ExhibitorHeader>
 
       {
         showVehicle &&

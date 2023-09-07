@@ -3,17 +3,13 @@ import * as THREE from 'three'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import Vehicule from './Vehicule'
-import { useLayoutEffect, useRef, useState } from 'react'
-import { applyProps, useFrame } from '@react-three/fiber'
+import {  useRef, useState } from 'react'
+import {  useFrame } from '@react-three/fiber'
 
-import { Stats, OrbitControls, ContactShadows } from '@react-three/drei'
+import { ContactShadows } from '@react-three/drei'
 
-import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
-import { PerformanceMonitor, AccumulativeShadows, RandomizedLight, Environment, Lightformer, Float, useGLTF } from '@react-three/drei'
-import { LayerMaterial, Color, Depth } from 'lamina'
-import { group } from 'console'
+import {  Environment, Lightformer, Float} from '@react-three/drei'
 
 const Exhibitor = () => {
    const [degraded, degrade] = useState(false)
