@@ -25,25 +25,29 @@ const About = () => {
             {/* Dinamic backgroun card */}
             <div className='absolute top-0 bottom-0 bg-white mt-12 md:mt-20   w-full  max-w-[1200px]'></div>
             {/* Content */}
-            <div className='relative px-4 pb-4 mx-4 sm:mx-8 sm:pt-2 md:mx-16 md:pt-8 z-10'>
+            <div className='flex'>
                
-               <span className='text-2xl font-bold md:text-3xl'>Overview</span>
+               {/* ref */}
+               <div className='relative px-4 pb-4 mx-4 sm:mx-8 sm:pt-2 md:mx-16 md:pt-8 z-10'>
 
-               <p className='pt-4 pb-8'>{ models[0].about }</p>
+                  <span className='text-2xl font-bold md:text-3xl'>Overview</span>
 
-               <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
+                  <p className='pt-4 pb-8'>{ models[0].about }</p>
 
-                  {
-                     models[0].photos.map( (photo) => (
-                        <div className='flex justify-center items-center drop-shadow-md'>
-                           <ImageThumbnail imageUrl={photo} ></ImageThumbnail>
-                        </div>
+                  <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
 
-                     ) )
-                  }
+                     {
+                        models[0].photos.map( (photo) => (
+                           <div className='flex justify-center items-center drop-shadow-md'>
+                              <ImageThumbnail imageUrl={photo} ></ImageThumbnail>
+                           </div>
+
+                        ) )
+                     }
+
+                  </div>
 
                </div>
-
 
                
             </div>
