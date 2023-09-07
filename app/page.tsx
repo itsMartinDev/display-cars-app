@@ -5,6 +5,7 @@ import Paginator from '@/components/Paginator'
 import Image from 'next/image'
 import { models } from '@/constants/constants'
 import Characteristics from '@/components/Characteristics'
+import About from '@/components/About'
 
 export default function Home() {
   return (
@@ -25,13 +26,17 @@ export default function Home() {
 
       </div>
 
-      {/* <Exhibitor></Exhibitor> */}
+      <Exhibitor></Exhibitor>
 
-      <div className='bg-gray-400 h-8'> </div>
+      {/* <div className='bg-gray-400 h-32'> </div> */}
 
       <ExhibitorFooter></ExhibitorFooter>
       <Paginator></Paginator>
       <Characteristics></Characteristics>
+
+      <About></About>
+
+      
 
 
 

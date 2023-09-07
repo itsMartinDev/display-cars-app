@@ -17,19 +17,28 @@ export const models  = [
       length : '191.7 in',
       width: '82.6 in',
       height : '44.8 in',
-
       weight : '	1595 kg',
-
-      retailsPrice : 225500,
-      fabricationYear : 2022,
-      manufacturerLogo : '',
-      
-      
+            
       engine : {
          type : '6.5 V12 (819 Hp) MHEV 4WD ISR',
          power : '785 Hp @ 8500 rpm'
          
       },
+
+
+      about : 'Fifty years since its unveiling at the Geneva Motor Show, the legendary Lamborghini Countach is making headlines again with a limited-series hybrid supercar celebrating the visionary design that revolutionized modern sports cars forever and laid the foundations of the Lamborghini legacy. This is the new Countach LPI 800-4. Inspired by the past, made for the future.',
+
+
+      photos : [
+         'lambo_01.jpg',
+         'lambo_02.jpg',
+         'lambo_03.jpg'
+      ],
+
+      retailsPrice : 225500,
+      fabricationYear : 2022,
+      manufacturerLogo : '',
+      
       seats : 4,
       fuelTankCapacity : 23,
       model3d : ''

@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root {
-  --bg-custom-gray: #202023;
+  --bg-custom-gray: #232323;
   --opacity-value : 0
 }
 
@@ -18,18 +18,18 @@ body {
 .bg__navbar {
   background-image: url("/app/bg-navbar.jpg");
   background-position: center;
+}
 
+.bg {
+  background-image: url("/app/bg-hex-2.jpg");
+  background-size: cover;
 }
 
 
 .container {
   @apply  max-w-7xl mx-auto ;
-
 }
 
-.text__logo {
-  font-family: 'Permanent Marker';
-}
 
 .title {
   @apply text-2xl font-bold italic
@@ -44,69 +44,68 @@ body {
 
 
 
-.panel {
-  @apply flex flex-col  justify-center items-center;
+.panel-col {
+  @apply flex justify-center items-center flex-col ;
+}
+
+.panel-row {
+  @apply flex justify-center items-center 
 }
 
 
-.panel-01 {
 
-  background-image: url( '/svg/panel-01.svg' );
+.panel {
   background-position: center;
   background-repeat:  no-repeat; 
   background-color: rgba(119, 119, 119, var(--opacity-value));
 }
 
 
-.panel-02 {
-
-  background-image: url( '/svg/panel-02.svg' );
-  background-position: center;
-  background-repeat:  no-repeat; 
-  background-color: rgba(255, 220, 220, var(--opacity-value));
+.panel-01 {
+  background-image: url( '/svg/panel-01.svg' );
 }
 
-
+.panel-02 {
+  background-image: url( '/svg/panel-02.svg' );
+}
 
 .panel-03 {
   background-image: url( '/svg/panel-03.svg' );
-  background-position: center;
-  background-repeat:  no-repeat; 
-  background-color: rgba(255, 220, 220, var(--opacity-value));
 }
-
-
 
 .panel-04 {
   background-image: url( '/svg/panel-04.svg' );
-  background-position: center;
-  background-repeat:  no-repeat; 
-  background-color: rgba(255, 220, 220, var(--opacity-value));
 }
-
-
-
 
 .panel-05 {
   background-image: url( '/svg/panel-05.svg' );
-  background-position: center;
-  background-repeat:  no-repeat; 
-  background-color: rgba(255, 220, 220, var(--opacity-value));
 }
-
 
 .panel-06 {
   background-image: url( '/svg/panel-06.svg' );
-  background-position: center;
-  background-repeat:  no-repeat; 
-  background-color: rgba(255, 220, 220, var(--opacity-value));
 }
-
-
 
 .panel-07 {
   background-image: url( '/svg/panel-07.svg' );
-  background-position: center;
-  background-repeat:  no-repeat; 
-  background-color: rgba(255, 220, 220, var(--opacity-value));
+}
+
+.clipped {
+  /* clip-path: path("M698,0V394.44L655.56,442H0V47.56L42.44,0H698Z"); */
+  mask: url('/svg/image-mask.svg');
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.top-about-clip {
+  mask: url('/svg/top-about.svg');
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+
+.bottom-about-clip {
+  mask: url('/svg/bottom-about.svg');
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: bottom;
 }
