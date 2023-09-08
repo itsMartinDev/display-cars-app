@@ -10,7 +10,7 @@ import ExhibitorHeader from '@/components/ExhibitorHeader'
 
 export default function Home() {
 
-  const showVehicle = true;
+  const showVehicle = false;
 
   return (
     <main>

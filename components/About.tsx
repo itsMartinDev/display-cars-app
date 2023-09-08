@@ -90,7 +90,7 @@ const About = () => {
 
 
       {/* Service details Modal box  */}
-      <div id="image-modal-box" className="modal opacity-0 pointer-events-none fixed z-50 w-full h-full p-10 top-0 left-0 flex items-center justify-center">
+      <div id="image-modal-box" className="modal opacity-0 pointer-events-none fixed z-50 w-full h-full px-10 py-2 top-0 left-0 flex items-center justify-center">
 
 
             {/* Modal overlay */}
@@ -99,7 +99,7 @@ const About = () => {
             ></div>
 
 
-            <div className="modal-container bg-white w-11/12 h-full md:max-w-2xl mx-auto rounded shadow-lg z-50 ">
+            <div className="modal-container bg-white w-11/12 h-full md:max-w-6xl mx-auto rounded shadow-lg z-50 ">
 
 
                {/* Modal close button */}
@@ -116,17 +116,16 @@ const About = () => {
                </div>
 
                {/* Add margin if you want to see some of the overlay behind the modal */}
-               <div className="modal-content py-6 text-left px-6  flex items-center h-full justify-center">
+               <div className="modal-content py-4 px-4 flex items-center justify-center h-full w-full">
 
+                  
                   {/* Body */}
+                  <Image id='photo-modal' src={'/photos/lambo_01.jpg'} width={600} height={900} alt='' className='object-fill rounded-md md:w-9/12 2xl:w-10/12'></Image>
 
-                  <div id="body-modal-footer" className=""
-                  >
                       
-                      <Image id='photo-modal' src={'/photos/lambo_01.jpg'} width={600} height={900} alt=''></Image>
 
 
-                  </div>
+                  
 
                </div>
             </div>

@@ -12,7 +12,7 @@ import { ContactShadows } from '@react-three/drei'
 import {  Environment, Lightformer, Float} from '@react-three/drei'
 
 const Exhibitor = () => {
-   const [degraded, degrade] = useState(false)
+   
 
 
    return (
