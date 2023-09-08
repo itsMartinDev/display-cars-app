@@ -7,18 +7,14 @@ import React from 'react'
 
 const ImageThumbnail = (props: ImageThumbnailProps) => {
 
-   const handleImageClick = () => {
-      console.log('clicked')
-   }
 
    return (
 
+      <div className='transition ease-in-out delay-75  hover:drop-shadow-2xl  hover:cursor-pointer'>
 
-      <div className=''>
-
-         <Image src={'/photos/' + props.imageUrl} 
-            width={900} height={600} alt='' 
-            className='clipped' onClick={handleImageClick}></Image>
+         <Image src={'/photos/' + props.imageUrl}
+            width={900} height={600} alt=''
+            className='clipped' onClick={() => props.toggleImageModal('/photos/' + props.imageUrl) }></Image>
 
 
       </div>

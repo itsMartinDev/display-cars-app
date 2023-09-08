@@ -1,5 +1,6 @@
 
 
 export interface ImageThumbnailProps {
-   imageUrl : string
+   imageUrl : string,
+   toggleImageModal : Function
 }
