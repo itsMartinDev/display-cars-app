@@ -10,8 +10,11 @@ import { ContactShadows } from '@react-three/drei'
 
 
 import {  Environment, Lightformer, Float} from '@react-three/drei'
+import { ExhibitorProps } from '@/types'
 
-const Exhibitor = () => {
+
+
+const Exhibitor = ( props : ExhibitorProps ) => {
    
 
 
@@ -23,7 +26,7 @@ const Exhibitor = () => {
          <Canvas shadows camera={{ position: [-5, 3, 10], fov: 30 }}>
             <color attach="background" args={['#171717']} />
 
-            <Vehicule ></Vehicule>
+            <Vehicule model={ props.model }></Vehicule>
             
             <ContactShadows opacity={.5} scale={10} blur={1} far={10} resolution={256} color="#000000" />
 

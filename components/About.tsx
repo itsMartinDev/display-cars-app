@@ -1,10 +1,11 @@
-'use client'
-import { models } from '@/constants/constants'
+
 import Image from 'next/image'
 import React from 'react'
 import ImageThumbnail from './ImageThumbnail'
+import { AboutProps } from '@/types'
 
-const About = () => {
+
+const About = ( props : AboutProps ) => {
 
 
    
@@ -48,13 +49,13 @@ const About = () => {
 
             <span className='text-2xl font-bold md:text-3xl'>Overview</span>
 
-            <p className='pt-4 pb-8'>{ models[0].about }</p>
+            <p className='pt-4 pb-8'>{ props.about }</p>
             
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
 
                {
-                  models[0].photos.map( (photo) => (
-                     <div className='flex justify-center items-center drop-shadow-md'>
+                  props.photos.map( (photo) => (
+                     <div key={photo} className='flex justify-center items-center drop-shadow-md'>
                         <ImageThumbnail imageUrl={photo} toggleImageModal={handleToggleImageModal}></ImageThumbnail>
                      </div>
 

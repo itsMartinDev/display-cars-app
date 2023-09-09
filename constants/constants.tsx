@@ -18,8 +18,8 @@ export const models  = [
 
       manufacturer : 'Lamborghini',
       model : 'Countach LPI 800-4',
-      topSpeed : 355,
-      topSpeedUnit : 'km/h',
+      maxSpeed : 355,
+      maxSpeedUnit : 'km/h',
       accelerationRange : '0-100 km/h',
       acceletarionTime : '2.8 s',
 
@@ -46,6 +46,59 @@ export const models  = [
          'lambo_02.jpg',
          'lambo_03.jpg'
       ],
+
+      model3d : {
+         author : 'Lexyc16',
+         url: 'https://sketchfab.com/3d-models/2021-lamborghini-countach-lpi-800-4-d76b94884432422b966d1a7f8815afb5'
+      }
+
+   },
+   { 
+      id: '1',
+   
+      
+      files : {
+         binaryFile : 'mclaren_f1_1993.glb',
+         manufacturerLogo : 'mclaren-text.png',
+         modelLogo : 'f1.png'
+      },
+
+      manufacturer : 'McLaren Cars',
+      model : 'F1',
+      maxSpeed : 386.4,
+      maxSpeedUnit : 'km/h',
+      accelerationRange : '0-100 km/h',
+      acceletarionTime : '3.5 s',
+
+      powerLegend : 'Power / Power (KW)',
+      powerValue: '618 CV / 461 kW',
+
+      length : '168.8 in',
+      width: '71.7 in',
+      height : '44.9 in',
+      weight : '1138 kg',
+
+      engine : {
+         type : 'BMW S70/2 V12',
+         power : '618 hp @ 7400 rpm'
+      },
+      fuelTankCapacity : '90 L',
+      assemblyFlag : 'gb.png',
+
+      about : 'The 1993 McLaren F1 stands as an unparalleled masterpiece in automotive history. A symphony of speed and luxury, it marries cutting-edge engineering with timeless elegance. This iconic supercar, boasting a mid-mounted V12 engine and a carbon-fiber monocoque chassis, effortlessly accelerates to 60 mph in 3.2 seconds. Its distinctive central driving position and golden era aesthetics make it a true automotive legend, commanding reverence from enthusiasts and collectors worldwide. The McLaren F1 of 1993 is more than a car; it\'s a symbol of automotive excellence that continues to captivate hearts and minds.',
+
+
+      photos : [
+         'mclarenf1_01.jpg',
+         'mclarenf1_02.jpg',
+         'mclarenf1_03.jpg',
+         'mclarenf1_04.jpg'
+      ],
+
+      model3d : {
+         author : 'Alex.Ka.',
+         url: 'https://sketchfab.com/3d-models/mclaren-f1-1993-by-alexka-294df724d96241cdbe0e0f3c91ad7fce'
+      }
 
    }
 ]

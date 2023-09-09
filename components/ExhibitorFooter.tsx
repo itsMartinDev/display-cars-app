@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import React from 'react'
-import { models } from '@/constants/constants'
+import { ExhibitorFooterProps } from '@/types'
 
-const ExhibitorFooter = () => {
+
+const ExhibitorFooter = ( props : ExhibitorFooterProps ) => {
    return (
 
       <div className=' text-white  mt-[-80px] z-50 relative'>
@@ -17,7 +17,7 @@ const ExhibitorFooter = () => {
                   <span className='italic'>
                      <span className='font-bold'>Max Speed</span>
                      <div>
-                        {models[0].topSpeed + ' ' + models[0].topSpeedUnit}
+                        {props.maxSpeed + ' ' + props.maxSpeedUnit}
                      </div>
                   </span>
                </div>
@@ -25,22 +25,21 @@ const ExhibitorFooter = () => {
             </div>
 
             <div className='flex items-center justify-center px-3 ' >
-               {/* <Image src={'/app/logos/lamborghini.png'} width={35} height={35} alt='logo' className='mr-8'></Image> */}
+               
                <span className='italic'>
-                  <span className='font-bold'>{models[0].accelerationRange}</span>
+                  <span className='font-bold'>{props.accelerationRange}</span>
                   <div>
-                     {models[0].acceletarionTime}
+                     {props.acceletarionTime}
                   </div>
                </span>
             </div>
 
             <div className='flex items-center justify-center px-3 ' >
-               {/* <span className='italic'>Assembly</span>
-               <Image src={'/models/flags/it.png'} width={30} height={30} alt='logo' className='ml-8'></Image> */}
+
                <span className='italic'>
-                  <span className='font-bold'>{models[0].powerLegend}</span>
+                  <span className='font-bold'>{props.powerLegend}</span>
                   <div>
-                     {models[0].powerValue}
+                     {props.powerValue}
                   </div>
                </span>
             </div>

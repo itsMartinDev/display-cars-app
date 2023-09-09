@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { arsenal } from '@/app/fonts'
+import Navbar from '@/components/Navbar'
 
 
 export const metadata: Metadata = {
@@ -15,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={arsenal.className}>{children}</body>
+      <body className={arsenal.className}>
+        
+        <Navbar></Navbar>
+        {children}
+        </body>
     </html>
   )
 }

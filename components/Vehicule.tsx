@@ -6,9 +6,13 @@ import * as THREE from 'three'
 import { PerformanceMonitor, AccumulativeShadows, RandomizedLight, Environment, Lightformer, Float, useGLTF } from '@react-three/drei'
 
 
-const Vehicule = () => {
+interface VehiculeProps {
+  model : string
+}
 
-  const { scene } = useGLTF('/models/binary/lamborghini_countach_lpi_800-4.glb');
+const Vehicule = ( props : VehiculeProps) => {
+
+  const { scene } = useGLTF('/models/binary/' + props.model);
 
   return (
     <group castShadow>
