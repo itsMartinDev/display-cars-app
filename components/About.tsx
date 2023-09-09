@@ -11,7 +11,7 @@ const About = ( props : AboutProps ) => {
    
    const  handleToggleImageModal = (photo : string) => {
 
-      console.log('Modal opened', photo)
+
 
       let modalBox = document.getElementById('image-modal-box');
 
@@ -20,7 +20,7 @@ const About = ( props : AboutProps ) => {
 
       let imageElement = document.getElementById('photo-modal');
       imageElement?.setAttribute('srcset', photo)
-      console.log(imageElement)
+   
 
   }
 
