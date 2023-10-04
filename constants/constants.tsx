@@ -148,8 +148,8 @@ export const models  = [
       ],
 
       model3d : {
-         author : 'Alex.Ka.',
-         url: 'https://sketchfab.com/3d-models/mclaren-f1-1993-by-alexka-294df724d96241cdbe0e0f3c91ad7fce'
+         author : 'Car2022',
+         url: 'https://sketchfab.com/3d-models/ferrari-laferrari-50a45faa45c34d90b7aead3040639f5f'
       }
 
    }

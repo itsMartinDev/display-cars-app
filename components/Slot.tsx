@@ -82,6 +82,8 @@ const Slot = () => {
          <About
             about={ vehicle.about }
             photos={ vehicle.photos }
+            modelLink={ vehicle.model3d.url}
+            modelAuthor={ vehicle.model3d.author}
          ></About>
 
 

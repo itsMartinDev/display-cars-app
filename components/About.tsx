@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import ImageThumbnail from './ImageThumbnail'
 import { AboutProps } from '@/types'
+import Link from 'next/link'
 
 
 const About = ( props : AboutProps ) => {
@@ -49,8 +50,13 @@ const About = ( props : AboutProps ) => {
 
             <span className='text-2xl font-bold md:text-3xl'>Overview</span>
 
-            <p className='pt-4 pb-8'>{ props.about }</p>
+            <p className='pt-4 pb-4'>{ props.about }</p>
             
+            <div className='mb-4 flex text-sm text-gray-600'>
+               <Image src={'/app/3d-icon.png'} width={20} height={20} alt='3D Icon' className='mr-4'></Image>
+               3D model made by &nbsp; <Link href={props.modelLink} target='_blank' className='italic  font-bold hover:underline'>{props.modelAuthor}</Link>
+            </div>
+
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
 
                {

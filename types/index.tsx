@@ -41,5 +41,7 @@ export interface CharacteristicsProps {
 
 export interface AboutProps {
    about : string,
-   photos : string[]
+   photos : string[],
+   modelAuthor : string,
+   modelLink : string
 }
