@@ -54,7 +54,7 @@ export const models  = [
 
    },
    { 
-      id: '1',
+      id: '2',
    
       
       files : {
@@ -100,5 +100,58 @@ export const models  = [
          url: 'https://sketchfab.com/3d-models/mclaren-f1-1993-by-alexka-294df724d96241cdbe0e0f3c91ad7fce'
       }
 
+   },
+
+
+   { 
+      id: '3',
+   
+      
+      files : {
+         binaryFile : 'laferrari.glb',
+         manufacturerLogo : 'ferrari-text.png',
+         modelLogo : 'laferrari.png'
+      },
+
+      manufacturer : 'Ferrari',
+      model : 'LaFerrari',
+      maxSpeed : 350.8,
+      maxSpeedUnit : 'km/h',
+      accelerationRange : '0-100 km/h',
+      acceletarionTime : '3.2 s',
+
+      powerLegend : 'Power / Power (KW)',
+      powerValue: '962 CV / 708 kW',
+
+      length : '185.1 in',
+      width: '78.4 in',
+      height : '43.9 in',
+      weight : '1585 kg',
+
+      engine : {
+         type : '6.3 L F140 FE V12',
+         power : '789 hp @ 9,000 rpm'
+      },
+      fuelTankCapacity : '88 L',
+      assemblyFlag : 'it.png',
+
+      about : 'The LaFerrari, Ferrari\'s extraordinary masterpiece, is a mesmerizing blend of cutting-edge technology and timeless Italian craftsmanship. This hypercar exemplifies automotive excellence, boasting a powerful 6.3-liter V12 engine paired with an electric motor, delivering a mind-boggling 949 horsepower. With a top speed of over 217 mph, it accelerates from 0 to 60 mph in less than 3 seconds. Its aerodynamic design is not just aesthetically stunning but also highly functional, enhancing performance and ensuring superior handling. The LaFerrari\'s interior is a testament to luxury and comfort, featuring premium materials and advanced infotainment systems. This car represents the pinnacle of Ferrari\'s engineering prowess, promising an unparalleled driving experience for enthusiasts and collectors alike.',
+
+
+      photos : [
+         'laferrari_01.jpg',
+         'laferrari_02.jpg',
+         'laferrari_03.jpg',
+         'laferrari_04.jpg',
+         'laferrari_05.jpg'
+
+      ],
+
+      model3d : {
+         author : 'Alex.Ka.',
+         url: 'https://sketchfab.com/3d-models/mclaren-f1-1993-by-alexka-294df724d96241cdbe0e0f3c91ad7fce'
+      }
+
    }
+
 ]
